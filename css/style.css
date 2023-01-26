@@ -5,8 +5,12 @@
     padding: 0px;
 }
 
+html, body {
+    background-color: darkgray;
+    height: 100vh;
+}
+
 header {
-    height: 200px;
     color: white;
     background-color: black;
     text-align: center;
@@ -15,9 +19,22 @@ header {
 }
 
 header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
     font-size: 8vw;
     font-family: 'Passion One', cursive;
 
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vw;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
 section p {
@@ -26,48 +43,39 @@ section p {
     font-weight: normal;
     font-size: 3.5vw;
     line-height: 7vw;
+    padding-bottom: 2em;
 }
 
-#img1 {
-    
-    background-image: url('../assets/background001.jpg');
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-article {
-    padding: 30px 30px;
-}
-
-#img2 {
-    background-image: url('../assets/background002.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 .white {
-    padding-left: 35px;
-    padding-top: 50px;
     background-color: white;
-    box-shadow: 10px 10px 50px 10px black;
-
-
+    box-shadow: 30px 30px 30px black;
 }
 
-.white p {
-    padding-bottom: 150px;
-}
-
-.alpha {
-    width: 40vw;
+.img {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.555);
     color: white;
-    background-color: rgba(0, 0, 0, 0.411);
-    padding-left: 5px;
+    background-color: black;
+}
+
+.img#i1 {
+    background-image: url('../assets/background001.jpg');
+    background-position: right center;
+}
+
+.img#i2 {
+    background-image: url('../assets/background002.jpg');
+}
+
+.img p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.295);
+    text-shadow: 1px 1px 0px black;
+
+
 
 }
 
@@ -81,12 +89,12 @@ a:hover {
 }
 
 footer {
-    position: absolute;
     padding-top: 20px;
+    padding-bottom: 20px;
     font-family: monospace;
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
     background-color: black;
     text-align: center;
-    height: 30px;
+
 }
